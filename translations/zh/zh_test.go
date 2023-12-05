@@ -7,7 +7,7 @@ import (
 	. "github.com/go-playground/assert/v2"
 	zhongwen "github.com/go-playground/locales/zh"
 	ut "github.com/go-playground/universal-translator"
-	"github.com/go-playground/validator/v10"
+	"github.com/integration-system/validator/v10"
 )
 
 func TestTranslations(t *testing.T) {
@@ -149,7 +149,7 @@ func TestTranslations(t *testing.T) {
 		LowercaseString       string    `validate:"lowercase"`
 		UppercaseString       string    `validate:"uppercase"`
 		Datetime              string    `validate:"datetime=2006-01-02"`
-		Image			  string			`validate:"image"`
+		Image                 string    `validate:"image"`
 	}
 
 	var test Test
@@ -683,7 +683,7 @@ func TestTranslations(t *testing.T) {
 			expected: "Datetime的格式必须是2006-01-02",
 		},
 		{
-			ns: "Test.Image",
+			ns:       "Test.Image",
 			expected: "Image 必须是有效图像",
 		},
 	}
