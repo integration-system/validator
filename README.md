@@ -31,7 +31,7 @@ Use go get.
 
 Then import the validator package into your own code.
 
-	import "github.com/integration-system/validator/v10"
+	import "github.com/txix-open/validator/v10"
 
 Error Return Value
 -------
